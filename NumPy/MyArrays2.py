@@ -47,5 +47,32 @@ numbers_copy = numbers.copy()
 
 numbers[1] *= 10
 
+grades = np.array([[87,96,70], [100, 87, 90]])
+
+#RESHAPE method produces a shallow copy
+grades_reshaped = grades.reshape(1,6)
+
+grades.resize(1,6)
+
+#Flatten creates a deep copy
+flattened = grades.flatten()
+
+#Raveled creates a shallow copy
+raveled = grades.ravel()
+
+raveled[0] = 100
+
+flattened[1] = 100
+
+grades = np.array([[87,96,70], [100, 87, 90]])
+
+grades.T
+
+grades2 = np.array([[94,77,90],[100,81,82]])
+
+h_grades = np.hstack((grades, grades2))
+
+v_grades = np.vstack((grades,grades2))
+
 print()
 
