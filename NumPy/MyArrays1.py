@@ -36,4 +36,24 @@ arr07 = np.arange(5, 10)
 
 arr08 = np.arange(10, 1, -2)
 
+arr09 = np.linspace(0.0, 1.0, num=5)
+
+arr10 = np.arange(1,21).reshape(4,5)
+
+num01 = np.arange(1,6)
+
+num02 = num01*2
+
+num03 = num01**3
+
+num01 += 10
+
+num04 = num01 * num02
+
+num05 = num01 > 13
+
+num06 = num03 > num01
+
+grades = np.array([[87,96,70], [100,87,90], [94,77,90], [100,81,82]])
+
 print()
